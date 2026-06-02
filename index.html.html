@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+        <h1>🎓 Student Result Calculator</h1>
+
+        <button class="dark-btn" onclick="toggleDarkMode()">
+            🌙 Dark Mode
+        </button>
+    </div>
+
+    <div class="student-info">
+
+        <input type="text"
+               id="name"
+               placeholder="Student Name">
+
+        <input type="text"
+               id="regno"
+               placeholder="Register Number">
+
+    </div>
+
+    <div class="marks-section">
+
+        <input type="number"
+               id="sub1"
+               placeholder="Subject 1 Marks">
+
+        <input type="number"
+               id="sub2"
+               placeholder="Subject 2 Marks">
+
+        <input type="number"
+               id="sub3"
+               placeholder="Subject 3 Marks">
+
+        <input type="number"
+               id="sub4"
+               placeholder="Subject 4 Marks">
+
+        <input type="number"
+               id="sub5"
+               placeholder="Subject 5 Marks">
+
+    </div>
+
+    <div class="button-group">
+
+        <button onclick="calculateResult()">
+            📊 Calculate Result
+        </button>
+
+        <button onclick="resetForm()">
+            🔄 Reset
+        </button>
+
+        <button onclick="window.print()">
+            🖨 Print Result
+        </button>
+
+    </div>
+
+    <!-- Progress Bar -->
+
+    <div class="progress-container">
+
+        <div class="progress-bar"
+             id="progressBar">
+             0%
+        </div>
+
+    </div>
+
+    <!-- Result Section -->
+
+    <div class="result-card">
+
+        <h3 id="total"></h3>
+
+        <h3 id="percentage"></h3>
+
+        <h3 id="grade"></h3>
+
+        <h3 id="remark"></h3>
+
+        <h3 id="status"></h3>
+
+        <hr>
+
+        <h3 id="subjectGrades"></h3>
+
+        <h3 id="highest"></h3>
+
+        <h3 id="lowest"></h3>
+
+        <h3 id="passedSubjects"></h3>
+
+        <h3 id="rank"></h3>
+
+        <h3 id="classAverage"></h3>
+
+    </div>
+
+</div>
+
+<!-- Confetti Library -->
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
